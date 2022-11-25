@@ -1,0 +1,24 @@
+.multipliers {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  .multiplier {
+    background-color: rgb(171, 227, 227);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: white;
+    transition: all 100ms;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+     
+      transform: scale(1.1);
+    }
+
+    &--selected{
+        background-color: teal;
+    }
+  }
+}
