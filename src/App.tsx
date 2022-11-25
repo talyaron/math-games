@@ -24,6 +24,12 @@ function App() {
   const [turns, setTurns] = useState<number>(1);
   const [end, setEnd] = useState<boolean>(false);
 
+  useEffect(()=>{
+    if(turns>5){
+      setEnd(true)
+    }
+  },[turns])
+
   function handleNewExercise() {
     setMultA(reandomNumber(multipliers));
     setMultB(reandomNumber(multipliers));
